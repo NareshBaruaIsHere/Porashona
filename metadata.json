@@ -1,0 +1,6 @@
+{
+  "name": "Porashona",
+  "description": "Exam countdown and syllabus tracker with offline storage, checklist, and statistics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
