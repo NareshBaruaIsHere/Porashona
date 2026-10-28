@@ -1,29 +1,47 @@
-# Porashona
+﻿<div align="center">
+  <img src="public/assets/readme/porashona-logo.png" alt="Porashona logo" width="180" />
+  <h1>Porashona</h1>
+  <p><strong>A calmer way to stay ready for exams.</strong></p>
+  <p>Plan exams, follow your syllabus, focus with intention, and keep your class routine close at hand.</p>
+  <p>
+    <a href="https://tinyurl.com/mvhbfe5f"><strong>Download for Android</strong></a>
+    &nbsp;·&nbsp;
+    <a href="https://itsnaresh.me/porashona-privacy/">Privacy policy</a>
+  </p>
+  <p>
+    <a href="https://www.android.com/"><img alt="Android" src="https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white"></a>
+    <a href="https://kotlinlang.org/"><img alt="Kotlin" src="https://img.shields.io/badge/Language-Kotlin-7F52FF?logo=kotlin&logoColor=white"></a>
+    <a href="https://developer.android.com/compose"><img alt="Jetpack Compose" src="https://img.shields.io/badge/UI-Jetpack%20Compose-4285F4?logo=jetpackcompose&logoColor=white"></a>
+  </p>
+</div>
 
-**A calmer way to stay ready for exams.** Porashona brings exam countdowns, syllabus progress, study sessions, and your weekly class routine together in one Android app.
+## See Porashona
 
-[![Android](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)](https://www.android.com/)
-[![Kotlin](https://img.shields.io/badge/Language-Kotlin-7F52FF?logo=kotlin&logoColor=white)](https://kotlinlang.org/)
-[![Jetpack Compose](https://img.shields.io/badge/UI-Jetpack%20Compose-4285F4?logo=jetpackcompose&logoColor=white)](https://developer.android.com/compose)
+<table>
+  <tr>
+    <td align="center"><strong>Exam overview</strong><br><img src="public/assets/readme/exam-list.jpg" alt="Porashona exam list screen" width="240"></td>
+    <td align="center"><strong>Exam details & syllabus</strong><br><img src="public/assets/readme/exam-details.jpg" alt="Exam countdown, readiness, and syllabus screen" width="240"></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Study statistics</strong><br><img src="public/assets/readme/study-statistics.jpg" alt="Study time, weekly activity, and study history screen" width="240"></td>
+    <td align="center"><strong>Weekly class routine</strong><br><img src="public/assets/readme/routine.jpg" alt="Weekly class schedule with attendance tracking" width="240"></td>
+  </tr>
+</table>
 
-## Get the app
+## Make exam prep feel manageable
 
-[**Download Porashona for Android**](https://tinyurl.com/mvhbfe5f)
+- **Know what’s coming:** Add subjects, exam dates, times, and rooms. Sort or filter exams by date, urgency, and readiness.
+- **Track syllabus progress:** Break a subject into topics and see how prepared you are for each exam.
+- **Build a steady study habit:** Log study sessions, review weekly activity and time by subject, and track your streak.
+- **Focus with Pomodoro:** Run focus and break sessions, then save completed focus time to your study history.
+- **Keep your timetable handy:** Organize weekly classes with rooms and professors, and see what is happening now or next.
+- **Get useful reminders:** Schedule exam notifications and add a home-screen widget for upcoming exams.
+- **Save time on setup:** Scan timetable images with text recognition, and export your schedule or backup data.
+- **Settle into your style:** Choose a light, dark, or system theme.
 
-## What you can do
+## Privacy
 
-- **Plan exams:** Add subjects, exam dates and times, rooms, and syllabus topics. See live countdowns and completion progress at a glance.
-- **Stay organized:** Search, filter, and sort exams by urgency, date, readiness, or name.
-- **Build a study habit:** Track study sessions, review weekly activity and subject totals, and keep an eye on your streak.
-- **Focus with Pomodoro:** Run focus and break sessions and save completed focus time to your study history.
-- **Keep your class routine handy:** Set a weekly schedule with rooms and professors, and see what is happening now or next.
-- **Use helpful reminders:** Schedule exam notifications and add the home-screen widget for a quick view of upcoming exams.
-- **Work with your timetable:** Scan timetable images with text recognition and export your schedule or backup data.
-- **Make it yours:** Choose a light, dark, or system theme.
-
-## Privacy by design
-
-Porashona is designed to work without an account. Exam, syllabus, routine, and study-tracking data are stored locally on your device. The app includes optional network-backed features; review the [privacy policy](https://itsnaresh.me/porashona-privacy/) for details.
+Porashona is designed to work without an account. Exam, syllabus, routine, and study-tracking data are stored locally on your device. The app also includes optional network-backed features; see the [privacy policy](https://itsnaresh.me/porashona-privacy/) for details.
 
 ## Built with
 
@@ -45,11 +63,17 @@ Porashona is designed to work without an account. Exam, syllabus, routine, and s
 2. Let Android Studio sync the Gradle project and install any requested SDK components.
 3. Select the `app` run configuration and launch it on a device or emulator.
 
-The app can be run locally without a Gemini key. If you configure optional Gemini-powered image recognition, put your own key in the root `.env` file as `GEMINI_API_KEY=...`. The Secrets Gradle Plugin reads `.env`; never commit API keys, signing keys, or passwords.
+The app can run locally without a Gemini key. To use optional Gemini-powered image recognition, add your own key to the root `.env` file:
+
+```dotenv
+GEMINI_API_KEY=your_key_here
+```
+
+The Secrets Gradle Plugin reads `.env`. Do not commit API keys, signing keys, or passwords.
 
 ## Build
 
-On Windows, from the project root:
+On Windows:
 
 ```powershell
 .\gradlew.bat assembleDebug
@@ -77,7 +101,7 @@ app/src/main/java/com/example/
 
 ## Contributing
 
-Bug reports and focused pull requests are welcome. Please describe the change and include clear steps to reproduce any reported issue.
+Bug reports and focused pull requests are welcome. Please include clear steps to reproduce any reported issue.
 
 ## License
 
